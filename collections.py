@@ -4,8 +4,6 @@ fr = ['un','deux','trois','quatre','cinq','six','sept','huit','neuf']
 new_dict = {}
 
 for i in range(len(digits)):
-    temp_dict = {}
-    temp_dict = {'en': en[i], 'fr':fr[i] }
-    new_dict[i] = temp_dict
+    new_dict[str(i)] = {'french': fr[i], 'en':fr[i] }
 
 print(new_dict)
